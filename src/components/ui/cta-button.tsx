@@ -24,7 +24,7 @@ export function CTAButton({
       variant={variant} 
       size={size}
       className={cn(
-        "font-roboto font-bold bg-purple-DEFAULT hover:bg-purple-dark text-white",
+        "font-roboto font-bold bg-purple-DEFAULT hover:bg-purple-dark text-black", // Changed text color to black
         className
       )}
     >
