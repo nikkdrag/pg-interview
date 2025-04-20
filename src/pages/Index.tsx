@@ -113,7 +113,7 @@ export default function Index() {
       <Section className="bg-gradient-to-br from-purple-100/50 to-white pt-24 pb-16">
         <div className="max-w-5xl mx-auto">
           <AnimatedReveal>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6 text-black">
               EU Career Prep for Product Managers
             </h1>
           </AnimatedReveal>
@@ -147,7 +147,7 @@ export default function Index() {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <AnimatedReveal delay={0.1}>
             <Card className="p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all">
-              <h3 className="font-bold text-xl mb-4 text-purple-DEFAULT">Фокус программы</h3>
+              <h3 className="font-bold text-xl mb-4 text-black">Фокус программы</h3>
               <p className="text-gray-700">
                 Комплексная подготовка продакт-менеджеров к выходу на европейский рынок через 
                 развитие ключевых навыков и отработку стратегий прохождения интервью.
@@ -157,7 +157,7 @@ export default function Index() {
 
           <AnimatedReveal delay={0.2}>
             <Card className="p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all">
-              <h3 className="font-bold text-xl mb-4 text-purple-DEFAULT">Карьерная стратегия</h3>
+              <h3 className="font-bold text-xl mb-4 text-black">Карьерная стратегия</h3>
               <p className="text-gray-700">
                 Разработка индивидуальной карьерной стратегии, включающей подготовку к собеседованиям, 
                 адаптацию резюме и развитие профессиональных навыков для европейского рынка.
@@ -167,7 +167,7 @@ export default function Index() {
 
           <AnimatedReveal delay={0.3}>
             <Card className="p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all">
-              <h3 className="font-bold text-xl mb-4 text-purple-DEFAULT">Формат занятий</h3>
+              <h3 className="font-bold text-xl mb-4 text-black">Формат занятий</h3>
               <p className="text-gray-700">
                 Сбалансированное сочетание теории (видеоматериалы), групповых занятий с ментором 
                 (3-4 человека) и индивидуальных сессий с партнером для максимальной эффективности обучения.
@@ -177,7 +177,7 @@ export default function Index() {
 
           <AnimatedReveal delay={0.4}>
             <Card className="p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all">
-              <h3 className="font-bold text-xl mb-4 text-purple-DEFAULT">Расширенные возможности</h3>
+              <h3 className="font-bold text-xl mb-4 text-black">Расширенные возможности</h3>
               <p className="text-gray-700">
                 Возможность расширить программу через индивидуальную работу с ментором для более 
                 глубокого погружения в материал и персонализированной обратной связи.
@@ -200,7 +200,7 @@ export default function Index() {
                 <div className="rounded-full bg-purple-100 p-4 mb-4 inline-flex">
                   {feature.icon}
                 </div>
-                <h3 className="font-bold text-xl mb-2">{feature.title}</h3>
+                <h3 className="font-bold text-xl mb-2 text-black">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
             </AnimatedReveal>
@@ -220,7 +220,7 @@ export default function Index() {
               <Card className="overflow-hidden border border-gray-200">
                 <div className="bg-purple-DEFAULT p-4 text-white">
                   <div className="flex justify-between items-center">
-                    <h3 className="font-bold text-lg md:text-xl">{module.title}</h3>
+                    <h3 className="font-bold text-lg md:text-xl text-black">{module.title}</h3>
                     <span className="bg-white text-purple-DEFAULT text-sm rounded px-2 py-1 font-medium">
                       {module.duration}
                     </span>
@@ -251,7 +251,7 @@ export default function Index() {
         <AnimatedReveal delay={0.1}>
           <Card className="max-w-4xl mx-auto p-8 border-2 border-purple-light/20 shadow-md">
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold text-purple-DEFAULT mb-4">Индивидуальная работа с ментором</h3>
+              <h3 className="text-2xl font-bold text-black mb-4">Индивидуальная работа с ментором</h3>
               <p className="text-lg text-gray-700 mb-6">
                 Углубленные персональные консультации для детальной проработки навыков и подготовки к интервью с учетом ваших индивидуальных потребностей.
               </p>
@@ -287,7 +287,7 @@ export default function Index() {
           {targetAudience.map((item, index) => (
             <AnimatedReveal key={item.title} delay={0.1 * (index + 1)}>
               <Card className="p-6 shadow-sm hover:shadow-md transition-all border border-gray-100 h-full">
-                <h3 className="font-bold text-xl mb-3 text-purple-DEFAULT">{item.title}</h3>
+                <h3 className="font-bold text-xl mb-3 text-black">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
               </Card>
             </AnimatedReveal>
@@ -306,7 +306,7 @@ export default function Index() {
             <Accordion type="single" collapsible className="divide-y divide-gray-200">
               {faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200">
-                  <AccordionTrigger className="py-4 text-left font-medium text-lg hover:text-purple-DEFAULT hover:no-underline">
+                  <AccordionTrigger className="py-4 text-left font-medium text-lg hover:text-purple-DEFAULT hover:no-underline text-black">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="pb-4 text-gray-600">
@@ -323,7 +323,7 @@ export default function Index() {
       <Section className="bg-gradient-to-br from-purple-DEFAULT/10 to-purple-light/5">
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedReveal>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Готовы начать свой путь к европейской карьере?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Готовы начать свой путь к европейской карьере?</h2>
           </AnimatedReveal>
           
           <AnimatedReveal delay={0.1}>
