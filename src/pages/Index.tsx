@@ -1,4 +1,3 @@
-
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card } from "@/components/ui/card";
 import { Section, SectionHeading } from "@/components/ui/section";
@@ -47,12 +46,18 @@ const courseModules = [
   },
   {
     title: "Модуль 3: Product Execution",
-    duration: "5–6 занятий",
+    duration: "3 занятия",
     items: [
       "Поиск NSM + домашка (20 NSM)",
       "Целевые и указательные метрики",
-      "Контр-метрика и трейд-оффы",
-      "Разбор кейсов Metrics & Success (1–2 занятия)",
+      "Контр-метрика и трейд-оффы"
+    ]
+  },
+  {
+    title: "Модуль 4: Практические кейсы",
+    duration: "3 занятия",
+    items: [
+      "Разбор кейсов Metrics & Success",
       "Debugging / Root Cause Analysis",
       "Сложный кейс вместе + домашка (устный разбор с таймером)"
     ]
