@@ -1,3 +1,4 @@
+
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card } from "@/components/ui/card";
 import { Section, SectionHeading } from "@/components/ui/section";
@@ -6,83 +7,103 @@ import { AnimatedReveal } from "@/components/AnimatedReveal";
 import { Video, Book, Users, Headphones, Calendar, ArrowRight } from "lucide-react";
 
 // FAQ questions and answers
-const faqs = [{
-  question: "На каком языке проходит программа?",
-  answer: "Программа проводится полностью на английском языке, включая все учебные материалы, групповые встречи и индивидуальные консультации."
-}, {
-  question: "Можно ли присоединиться позже?",
-  answer: "К сожалению, присоединение после начала программы не предусмотрено, так как модули последовательны и каждый базируется на предыдущем."
-}, {
-  question: "Сколько человек в группе?",
-  answer: "Групповые занятия проводятся в мини-группах до 3-4 человек, что обеспечивает достаточное внимание ментора каждому участнику."
-}, {
-  question: "Какие требования к уровню английского?",
-  answer: "Для комфортного участия в программе рекомендуется уровень английского не ниже Intermediate (B1). Этот уровень позволит активно участвовать в обсуждениях и выполнять практические задания."
-}];
+const faqs = [
+  {
+    question: "На каком языке проходит программа?",
+    answer: "Программа проводится полностью на английском языке, включая все учебные материалы, групповые встречи и индивидуальные консультации."
+  },
+  {
+    question: "Можно ли присоединиться позже?",
+    answer: "К сожалению, присоединение после начала программы не предусмотрено, так как модули последовательны и каждый базируется на предыдущем."
+  },
+  {
+    question: "Сколько человек в группе?",
+    answer: "Групповые занятия проводятся в мини-группах до 3-4 человек, что обеспечивает достаточное внимание ментора каждому участнику."
+  },
+  {
+    question: "Какие требования к уровню английского?",
+    answer: "Для комфортного участия в программе рекомендуется уровень английского не ниже Intermediate (B1). Этот уровень позволит активно участвовать в обсуждениях и выполнять практические задания."
+  }
+];
 
 // Course modules
-const courseModules = [{
-  title: "Модуль 1: Поведенческие интервью",
-  duration: "2 занятия",
-  items: [
-    "1: Теория и тренировка простых вопросов + домашка (elevator pitch и частые вопросы)",
-    "2: Практика сложных вопросов в группе + домашка (стратегии и миссии компаний)"
-  ]
-}, {
-  title: "Модуль 2: Product Sense",
-  duration: "3 занятия",
-  items: [
-    "1: Сегменты и гипотезы боли, приоритезация",
-    "2: Гипотезы решений, метрики, MVP, риски",
-    "3: Разбор простого кейса + письменный разбор кейсов"
-  ]
-}, {
-  title: "Модуль 3: Product Execution",
-  duration: "5–7 занятий",
-  items: [
-    "1: Поиск NSM + домашка (20 продуктов)",
-    "2: Целевые и указательные метрики",
-    "3: Контр-метрики и трейд-оффы",
-    "4–5: Кейс Metrics & Success Measurement",
-    "6: Debugging / Root Cause Analysis",
-    "7: Разбор сложного кейса + устная защита с таймером"
-  ]
-}];
+const courseModules = [
+  {
+    title: "Модуль 1: Поведенческие интервью",
+    duration: "2 занятия",
+    items: [
+      "Теория + практика базовых вопросов + домашка (elevator pitch, заготовки)",
+      "Продвинутая практика в группе + домашка (поиск стратегий компаний)"
+    ]
+  },
+  {
+    title: "Модуль 2: Product Sense",
+    duration: "3 занятия",
+    items: [
+      "Сегменты, гипотезы боли, приоритизация болей",
+      "Решения, приоритизация, метрики, MVP, риски",
+      "Разбор кейса вместе + домашка (письменно разобрать кейсы)"
+    ]
+  },
+  {
+    title: "Модуль 3: Product Execution",
+    duration: "5–6 занятий",
+    items: [
+      "Поиск NSM + домашка (20 NSM)",
+      "Целевые и указательные метрики",
+      "Контр-метрика и трейд-оффы",
+      "Разбор кейсов Metrics & Success (1–2 занятия)",
+      "Debugging / Root Cause Analysis",
+      "Сложный кейс вместе + домашка (устный разбор с таймером)"
+    ]
+  }
+];
 
 // Format features
-const formatFeatures = [{
-  title: "Теория",
-  icon: <Video className="w-6 h-6" />,
-  description: "Видеоматериалы для самостоятельного изучения"
-}, {
-  title: "Групповые встречи",
-  icon: <Users className="w-6 h-6" />,
-  description: "1 раз в неделю с ментором, до 3-4 человек"
-}, {
-  title: "1-to-1 сессии",
-  icon: <Headphones className="w-6 h-6" />,
-  description: "Индивидуальные консультации по запросу"
-}, {
-  title: "Язык обучения",
-  icon: <Book className="w-6 h-6" />,
-  description: "Все материалы и общение на английском языке"
-}];
+const formatFeatures = [
+  {
+    title: "Теория",
+    icon: <Video className="w-6 h-6" />,
+    description: "Видеоматериалы для самостоятельного изучения"
+  },
+  {
+    title: "Групповые встречи",
+    icon: <Users className="w-6 h-6" />,
+    description: "1 раз в неделю с ментором, до 3-4 человек"
+  },
+  {
+    title: "1-to-1 сессии",
+    icon: <Headphones className="w-6 h-6" />,
+    description: "Индивидуальные консультации по запросу"
+  },
+  {
+    title: "Язык обучения",
+    icon: <Book className="w-6 h-6" />,
+    description: "Все материалы и общение на английском языке"
+  }
+];
 
 // Target audience
-const targetAudience = [{
-  title: "Продакт-менеджеры",
-  description: "Специалисты, стремящиеся выйти на европейский рынок труда"
-}, {
-  title: "Международная карьера",
-  description: "Профессионалы, нацеленные на построение карьеры в международных компаниях"
-}, {
-  title: "Развитие навыков",
-  description: "Те, кто хочет улучшить навыки прохождения интервью и execution-навыки на английском языке"
-}];
+const targetAudience = [
+  {
+    title: "Продакт-менеджеры",
+    description: "Специалисты, стремящиеся выйти на европейский рынок труда"
+  },
+  {
+    title: "Международная карьера",
+    description: "Профессионалы, нацеленные на построение карьеры в международных компаниях"
+  },
+  {
+    title: "Развитие навыков",
+    description: "Те, кто хочет улучшить навыки прохождения интервью и execution-навыки на английском языке"
+  }
+];
 
 export default function Index() {
   const consultationLink = "https://t.me/KriGuseva";
-  return <div className="font-roboto min-h-screen bg-white">
+
+  return (
+    <div className="font-roboto min-h-screen bg-white">
       {/* Hero Section */}
       <Section className="bg-gradient-to-br from-purple-100/50 to-white pt-24 pb-16">
         <div className="max-w-5xl mx-auto">
@@ -100,8 +121,11 @@ export default function Index() {
           </AnimatedReveal>
 
           <AnimatedReveal delay={0.2}>
-            <div className="flex justify-center bg-zinc-400">
-              <CTAButton href={consultationLink} className="text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all">
+            <div className="flex justify-center">
+              <CTAButton 
+                href={consultationLink}
+                className="text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+              >
                 Записаться на консультацию
               </CTAButton>
             </div>
@@ -131,7 +155,7 @@ export default function Index() {
               <h3 className="font-bold text-xl mb-4 text-purple-DEFAULT">Карьерная стратегия</h3>
               <p className="text-gray-700">
                 Разработка индивидуальной карьерной стратегии, включающей подготовку к собеседованиям, 
-                адаптацию резюме и развитие профессиона��ьных навыков для европейского рынка.
+                адаптацию резюме и развитие профессиональных навыков для европейского рынка.
               </p>
             </Card>
           </AnimatedReveal>
@@ -165,7 +189,8 @@ export default function Index() {
         </AnimatedReveal>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {formatFeatures.map((feature, index) => <AnimatedReveal key={feature.title} delay={0.1 * (index + 1)}>
+          {formatFeatures.map((feature, index) => (
+            <AnimatedReveal key={feature.title} delay={0.1 * (index + 1)}>
               <div className="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-all h-full flex flex-col items-center">
                 <div className="rounded-full bg-purple-100 p-4 mb-4 inline-flex">
                   {feature.icon}
@@ -173,7 +198,8 @@ export default function Index() {
                 <h3 className="font-bold text-xl mb-2">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
-            </AnimatedReveal>)}
+            </AnimatedReveal>
+          ))}
         </div>
       </Section>
 
@@ -184,7 +210,8 @@ export default function Index() {
         </AnimatedReveal>
         
         <div className="space-y-8 max-w-4xl mx-auto">
-          {courseModules.map((module, index) => <AnimatedReveal key={module.title} delay={0.1 * (index + 1)}>
+          {courseModules.map((module, index) => (
+            <AnimatedReveal key={module.title} delay={0.1 * (index + 1)}>
               <Card className="overflow-hidden border border-gray-200">
                 <div className="bg-purple-DEFAULT p-4 text-white">
                   <div className="flex justify-between items-center">
@@ -196,14 +223,17 @@ export default function Index() {
                 </div>
                 <div className="p-4 md:p-6">
                   <ul className="space-y-2">
-                    {module.items.map((item, itemIndex) => <li key={itemIndex} className="flex items-start">
+                    {module.items.map((item, itemIndex) => (
+                      <li key={itemIndex} className="flex items-start">
                         <ArrowRight className="w-5 h-5 text-purple-DEFAULT mr-2 mt-0.5 flex-shrink-0" />
                         <span className="text-gray-700">{item}</span>
-                      </li>)}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </Card>
-            </AnimatedReveal>)}
+            </AnimatedReveal>
+          ))}
         </div>
       </Section>
 
@@ -231,7 +261,10 @@ export default function Index() {
             </div>
             
             <div className="text-center">
-              <CTAButton href={consultationLink} className="shadow-md">
+              <CTAButton 
+                href={consultationLink} 
+                className="shadow-md"
+              >
                 Узнать подробности
               </CTAButton>
             </div>
@@ -246,12 +279,14 @@ export default function Index() {
         </AnimatedReveal>
         
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {targetAudience.map((item, index) => <AnimatedReveal key={item.title} delay={0.1 * (index + 1)}>
+          {targetAudience.map((item, index) => (
+            <AnimatedReveal key={item.title} delay={0.1 * (index + 1)}>
               <Card className="p-6 shadow-sm hover:shadow-md transition-all border border-gray-100 h-full">
                 <h3 className="font-bold text-xl mb-3 text-purple-DEFAULT">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
               </Card>
-            </AnimatedReveal>)}
+            </AnimatedReveal>
+          ))}
         </div>
       </Section>
 
@@ -264,14 +299,16 @@ export default function Index() {
         <AnimatedReveal delay={0.1}>
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="divide-y divide-gray-200">
-              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200">
                   <AccordionTrigger className="py-4 text-left font-medium text-lg hover:text-purple-DEFAULT hover:no-underline">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="pb-4 text-gray-600">
                     {faq.answer}
                   </AccordionContent>
-                </AccordionItem>)}
+                </AccordionItem>
+              ))}
             </Accordion>
           </div>
         </AnimatedReveal>
@@ -291,7 +328,10 @@ export default function Index() {
           </AnimatedReveal>
 
           <AnimatedReveal delay={0.2}>
-            <CTAButton href={consultationLink} className="text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all">
+            <CTAButton 
+              href={consultationLink}
+              className="text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+            >
               Записаться на консультацию
             </CTAButton>
           </AnimatedReveal>
@@ -305,5 +345,6 @@ export default function Index() {
           <p className="text-sm text-gray-400">© {new Date().getFullYear()} Все права защищены</p>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 }
